@@ -91,11 +91,12 @@ input[type=submit], .switchBtn {
 .switchBtn {
     background-color: transparent;
     color: white;
-    border:1px dotted    white;
+    
     margin-top: 10px;
 }
 #registerZone, #connexionZone {
 	padding: 10px 20px;
+    margin: 0 auto;
 }
 #registerZone {
 	display: none;  
@@ -139,11 +140,8 @@ footer {
     width: 100%;
     color: #FFF;
     text-align: center;
-    margin-top: 280px;
+    margin-top: 200px;
     position: static;
-}
-#description {
-    
 }
                                         /** -Modif_jo**/
 #logoDiv{
@@ -159,13 +157,13 @@ footer {
 #connexionZone{
     text-align: center;
     //background-color: green;
-    margin: 0 auto;
+    //margin: 0 auto;
     width: 1000px;
 }
 #registerZone{
     text-align: center;
     //background-color: green;
-    margin: 0 auto;
+    //margin: 0 auto;
     width: 1000px;
 }
 figure{
