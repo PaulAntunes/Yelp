@@ -7,7 +7,7 @@
     -webkit-transition : 0.5s all;
     font-size: 14px;
     color: white;
-    font-family: 'font-family: 'Playfair Display', serif;';
+    font-family: 'Helvetica','Playfair Display', serif;';
 
 
 }
@@ -83,7 +83,7 @@ input[type=submit], .switchBtn {
     padding: 15px;
     margin-top: 20px;
     color: white;
-    font-family: 'font-family: 'Playfair Display', serif;';
+    
     font-weight: bold;
     width: 30%;
 }
@@ -92,7 +92,6 @@ input[type=submit], .switchBtn {
     color: white;
     border:1px dotted    white;
     margin-top: 10px;
-    font-family: 'font-family: 'Playfair Display', serif;';
 }
 #registerZone, #connexionZone {
 	padding: 10px 20px;
@@ -143,17 +142,9 @@ footer {
     position: static;
 }
 #description {
-    font-size: 30px;
-    width: 25%;
-    height: 50%;
-    border: 1px dotted white;
-    margin-left: 25px;
-    margin-top: 25px;
-    text-align: center;
     
-    box-sizing: border-box; 
 }
-                                        /**LOGO**/
+                                        /** -Modif_jo**/
 #logoDiv{
     border-radius: 70% 0;
     float: left;
@@ -175,4 +166,37 @@ footer {
     //background-color: green;
     margin: 0 auto;
     width: 1000px;
+}
+figure{
+    max-width: 500px;
+    max-height: 500px;
+    width: auto;
+    height: auto;
+}
+#yelpImg{
+    text-align: center;
+    width: 200px;
+    height: 200px;
+    background-color: red;
+}
+#presentation{
+   // width: 100%;
+    height: 300px;
+    background-color: #b32d00;
+    font-size: 1.5em;
+    margin: 10em auto 0;
+    padding: 50px 50px;
+    //border: 1px solid white;
+    text-align: center;
+    
+    box-sizing: border-box; 
+}
+button{
+    background-color: #b32d00;
+}
+button:hover{
+    background-color: #b32d00;
+}
+.bouton:hover{
+    background-color: #b32d00;
 }
