@@ -11,15 +11,18 @@
 
 
 }
-
+html{
+    height: 780px;
+    width: 1920px;
+}
 body{
     background-image: url('../img/Miami.jpg');
-    //background-repeat: no-repeat;
+    background-repeat: no-repeat;
     //background-repeat: repeat-x;
     background-size : cover;
 	text-align: right;
     width: 100%;
-    height: 100%;
+    margin: 0 0;
 }
 header {
     background-color:   transparent;
@@ -131,12 +134,12 @@ p {
     color : white;
 }
 footer {
-    background-color:   transparent;
+    background-color:  #b32d00;
     padding: 10px 20px;
     width: 100%;
     color: #FFF;
     text-align: center;
-    margin-top: 100%;
+    margin-top: 280px;
     position: static;
 }
 #description {
@@ -180,17 +183,18 @@ figure{
 #presentation{
    // width: 100%;
     height: 300px;
-    background-color: #b32d00;
+    background-color: rgba(77, 19, 0,0.6);
     font-size: 1.5em;
     margin: 10em auto 0;
-    padding: 50px 50px;
-    //border: 1px solid white;
+    padding: 5em 5em;
+    
     text-align: center;
     
     box-sizing: border-box; 
 }
 button{
     background-color: #b32d00;
+     border-radius: 50px;
 }
 button:hover{
     background-color: #b32d00;
@@ -221,6 +225,7 @@ a{
     color:darkblue;
     padding-left: 50px;
     padding-top: 120px;
+    text-decoration: none;
 }
                             /*correction Jo*/
 header{
