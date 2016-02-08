@@ -1,0 +1,25 @@
+input{
+	margin-left: 60px;
+	margin-top: 10px;
+}
+input.para{
+	float: right;
+	margin-right: 55px;
+}
+input.deco{
+	float: right;
+	margin-right: 40px;
+	margin-top: 0px;
+}
+img{
+	float: left;
+}
+a{
+	color:darkblue;
+	padding-left: 50px;
+	padding-top: 120px;
+}
+input{
+	border-radius: 50px;
+	float: left;
+}
