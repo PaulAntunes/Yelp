@@ -1,6 +1,8 @@
 input{
 	margin-left: 60px;
 	margin-top: 10px;
+	border-radius: 50px;
+	float: left;
 }
 input.para{
 	float: right;
@@ -18,8 +20,4 @@ a{
 	color:darkblue;
 	padding-left: 50px;
 	padding-top: 120px;
-}
-input{
-	border-radius: 50px;
-	float: left;
 }

@@ -200,3 +200,28 @@ button:hover{
 .bouton:hover{
     background-color: #b32d00;
 }
+                                        /**header_PAUL**/
+input{
+    margin-left: 60px;
+    margin-top: 10px;
+    border-radius: 50px;
+    float: left;
+}
+input.para{
+    float: right;
+    margin-right: 55px;
+}
+input.deco{
+    float: right;
+    margin-right: 40px;
+    margin-top: 0px;
+}
+img{
+    float: left;
+}
+a{
+    color:darkblue;
+    padding-left: 50px;
+    padding-top: 120px;
+}
+/**/
