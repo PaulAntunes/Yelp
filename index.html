@@ -1,17 +1,103 @@
+<!DOCTYPE html>
 <html>
-<head>
-<title>&Eacute;tapes du projet en &eacute;quipe</title>
-</head>
-<body>
-	<h1>Planifier son projet</h1>
-	<ul>
-		<li>Analyser les besoins</li>
-		<li>Distinguer les diff&eacute;rents composants du projet</li>
-		<li>Estimer le temps de travail pour chaque partie</li>
-		<li>Cr&eacute;er le Mod&egrave;le Conceptuel de Donn&eacute;es (MCD) avec DBDesigner ou MySQLWorkbench ou autre</li>
-		<li>Organiser son code (fichiers et r&eacute;pertoires)</li>
-		<li>D&eacute;finir les diff&eacute;rentes t&acirc;ches</li>
-		<li>Utiliser les outils n&eacute;cessaires au travail en &eacute;quipe (Git, partage de fichiers, etc.)</li>
-	</ul>
-</body>
+	<head>
+		<meta charset="UTF-8" />
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+		<link href='https://fonts.googleapis.com/css?family=Playfair+Display' rel='stylesheet' type='text/css'>
+		<title></title>
+	</head>
+	<body>
+		<header>
+			<h1>Yelp</h1>
+			<h2>the best way to find great local businesses</h2>
+		</header>
+		
+
+		<!-- ECRAN DINSCRIPTION -->
+		<div id="registerZone">
+			<section>
+
+				<form>
+					<h3>Sign up for Yelp</h3>
+					<table>
+						<tr>
+							<td><label for="firstNameRegister">Prénom</label></td>
+							<td><input type="text" name="firstNameRegister" id="firstNameRegister" /></td>
+						</tr>
+							<tr>
+							<td><label for="lastNameRegister">Name</label></td>
+							<td><input type="text" name="lastNameRegister" id="lastNameRegister" /></td>
+						</tr>
+						<tr>
+							<td><label for="emailRegister">Adresse mail</label></td>
+							<td><input type="email" name="emailRegister" id="emailRegister" /></td>
+						</tr>
+						<tr>
+							<td><label for="passRegister">Mot de passe</label></td>
+							<td><input type="password" name="passRegister" id="passRegister" /></td>
+						</tr>
+					</table>
+				    <input type="submit" value="Je m'inscrit" class="bouton" />
+			    </form>
+
+			    <button class="switchBtn">J'ai déjà un compte</button>
+			</section>
+			<article>
+			    <aside>
+					<button class="closePopIn">x</button>
+					<p></p>
+				</aside>
+			</article>
+		</div>
+
+		<!-- ECRAN DE CONNEXION -->
+		<div id="connexionZone">
+			<section>
+				<form>
+					<h3>Indiquez vos identifiants pour vous connecter</h3>
+					<table>
+						<tr>
+							<br><td><label for="emailConnect">Email</label></td><br/>
+							<td><input type="email" name="emailConnect" id="emailConnect" /></td>
+						</tr>
+						<tr>
+							<td><label for="passConnect">Mot de passe</label></td>
+							<td><input type="password" name="passConnect" id="passConnect" /></td>
+						</tr>
+					</table>
+				    <input type="submit" value="Je me connecte" class="bouton" />
+			    </form>
+
+			    <button class="switchBtn">créer un compte</button>
+		    </section>
+
+		    <article>
+			    <aside>
+					<button class="closePopIn">x</button>
+					<p></p>
+				</aside>
+			</article>
+		</div>
+		<div>
+			<article>
+				<section id ="description">					
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+					consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+					cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+					proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+				</section>
+			</article>
+		</div>
+
+		<!-- Intégration du CDN jQuery -->
+		<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+		<script type="text/javascript" src="js/script.js"></script>
+	</body>
+	<footer>
+		<h4>2016 &copy; </h4>
+	</footer>
+		
+
 </html>
