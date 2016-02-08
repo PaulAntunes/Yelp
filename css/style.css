@@ -49,7 +49,7 @@ h3 {
     color: white;
     font-size: 16px;
     font-weight: normal;
-    //border-bottom: 1px dotted white;
+    border-bottom: 1px dotted white;
     margin: 10px 0 15px 0;
     padding-bottom: 15px;    
 }
@@ -87,24 +87,15 @@ input[type=submit], .switchBtn {
     
     font-weight: bold;
     width: 30%;
-
 }
 .switchBtn {
-    position: relative;
-    display: inline-block;
-    clear: both;
     background-color: transparent;
     color: white;
-    //border:1px dotted    white;
+    border:1px dotted    white;
     margin-top: 10px;
-
 }
 #registerZone, #connexionZone {
-
 	padding: 10px 20px;
-    clear: both;
-    margin: 50px auto 0;
-
 }
 #registerZone {
 	display: none;  
@@ -137,14 +128,13 @@ input[type=submit], .switchBtn {
 }
 #registerZone form {
     float: right;
-    //display: block;
+    display: block;
 }
 p {
     color : white;
 }
 footer {
-    background:#4d1300;
-    background: -webkit-linear-gradient(top,#b32d00,#4d1300);
+    background-color:  #b32d00;
     padding: 10px 20px;
     width: 100%;
     color: #FFF;
@@ -152,7 +142,9 @@ footer {
     margin-top: 280px;
     position: static;
 }
-
+#description {
+    
+}
                                         /** -Modif_jo**/
 #logoDiv{
     border-radius: 70% 0;
@@ -167,13 +159,13 @@ footer {
 #connexionZone{
     text-align: center;
     //background-color: green;
-    //margin: 0 auto;
-    width: 1500px;
+    margin: 0 auto;
+    width: 1000px;
 }
 #registerZone{
     text-align: center;
     //background-color: green;
-   // margin: 0 auto;
+    margin: 0 auto;
     width: 1000px;
 }
 figure{
@@ -203,10 +195,6 @@ figure{
 button{
     background-color: #b32d00;
      border-radius: 50px;
-     display: inline-block;
-    position: relative;
-    clear: both;
-    margin: 0 auto;
 }
 button:hover{
     background-color: #b32d00;
@@ -245,7 +233,6 @@ header{
 }
 /**/
 #slogan{
-    z-index: 1000;
     position: fixed;
     height: 100px;
     width: 100%;
@@ -258,7 +245,4 @@ header{
 }
 #slogan>h2{
     text-align: center;
-}
-form{
-    margin-top: 100px;
 }
