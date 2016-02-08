@@ -4,6 +4,7 @@
     -webkit-box-sizing:border-box;
     font-family: 'font-family: 'Playfair Display', serif;';
     transition : 0.5s all;
+    -webkit-transition : 0.5s all;
     font-size: 14px;
     color: white;
     font-family: 'font-family: 'Playfair Display', serif;';
@@ -149,4 +150,15 @@ footer {
     margin-left: 25px;
     
     box-sizing: border-box; 
+}
+                                        /**LOGO**/
+#logoDiv{
+    border-radius: 70% 0;
+    float: left;
+    margin: 0 auto;
+    padding: 20px 0px;
+    text-align: center;
+    width: 100px;
+    height: 50px;
+    background-color: green;
 }
