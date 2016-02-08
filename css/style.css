@@ -191,6 +191,10 @@ figure{
     box-sizing: border-box; 
 }
 button{
+     display: inline-block;
+     position: relative;
+     clear: both;
+     margin: 0 auto;
     background-color: #b32d00;
      border-radius: 50px;
 }
@@ -202,6 +206,7 @@ button:hover{
 }
                                         /**header_PAUL**/
 input{
+    color: black;
     margin-left: 60px;
     margin-top: 10px;
     border-radius: 50px;
@@ -231,9 +236,10 @@ header{
 }
 /**/
 #slogan{
-    position: fixed;
-    height: 100px;
-    width: 100%;
+    z-index: 1000;
+      position: fixed;
+      height: 100px;
+      width: 100%;
     top: 0px;
     background:#4d1300;
     background: -webkit-linear-gradient(top,#4d1300,#b32d00);
@@ -243,4 +249,8 @@ header{
 }
 #slogan>h2{
     text-align: center;
+}
+form{
+
+     margin-top: 100px;
 }
