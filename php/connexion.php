@@ -1,16 +1,16 @@
 <?php
     // connexion dans la base de données
     try{
-        $bdd = new PDO('mysql:host=192.168.210.78;dbname=tice', 'webforce3');
+        $bdd = new PDO('mysql:host=193.168.76.1;dbname=yelp', 'webforce3');
     }
     catch (Exception $e){
         die('Erreur : ' . $e->getMessage());
     }
 
-    $request = $bdd->query("SELECT email, pass, ID FROM members WHERE email = '$_POST[emailConnect]' AND pass = '$_POST[passConnect]'");
+    $request = $bdd->query("SELECT mailUtilisateur, mdpUtilisateur, idUtilisateur FROM utilisateur WHERE emailConnect = '$_POST[mailUtilisateur]' AND passConnect = '$_POST[mdpUtilisateur]'");
     $membre = $request->fetch();
 
-    if(($_POST['emailConnect']==$membre['email'])&&($_POST['passConnect']==$membre['pass']))
+    if(($_POST['emailConnect']==$membre['mailUtilisateur'])&&($_POST['passConnect']==$membre['mdpUtilisateur']))
     {
         echo "OK"; //On 'retourne' la valeur Succes au javascript si la connexion est bonne
     }

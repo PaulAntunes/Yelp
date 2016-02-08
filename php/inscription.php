@@ -1,32 +1,33 @@
 <?php
     // connexion dans la base de données
     try{
-        $bdd = new PDO('mysql:host=192.168.210.78;dbname=tice', 'webforce3');
+        $bdd = new PDO('mysql:host=193.168.76.1;dbname=yelp', 'webforce3');
     }
     catch (Exception $e){
         die('Erreur : ' . $e->getMessage());
     }
 
-    $request = $bdd->query("SELECT email FROM members WHERE email = '$_POST[email]'");
+    $request = $bdd->query("SELECT mailUtilisateur FROM utilisateur WHERE mailUtilisateur = '$_POST[emailRegister]'");
     $membre = $request->fetch();
 
 
-    if(!empty($_POST['name']) AND !empty($_POST['pass']) AND !empty($_POST['email'])){ // si les variables ne sont pas vides
+    if(!empty($_POST['firstNameRegister']) AND   if(!empty($_POST['lastNameRegister']) AND !empty($_POST['passRegister']) AND !empty($_POST['emailRegister'])){ // si les variables ne sont pas vides
     
-        if(($_POST['email']==$membre['email'])){
+        if(($_POST['mailUtilisateur']==$membre['mailUtilisateur'])){
             echo "Exist"; //On 'retourne' la valeur Error au javascript si la connexion n'est pas bonne
         }
         else{
-            $name = mysql_real_escape_string($_POST['pseudo']);
-            $pass = mysql_real_escape_string($_POST['pass']);
-            $email = mysql_real_escape_string($_POST['email']);
+            $firstName = mysql_real_escape_string($_POST['firstNameRegister']);
+            $lastName = mysql_real_escape_string($_POST['lastNameRegister']);
+            $pass = mysql_real_escape_string($_POST['passRegister']);
+            $email = mysql_real_escape_string($_POST['emailRegister']);
 
             // puis on entre les données en base de données :
-            $insertion = $bdd->prepare('INSERT INTO members VALUES("", :name, :pass, :email)');
+            $insertion = $bdd->prepare('INSERT INTO utilisateur VALUES("", :name, :pass, :email)');
             $insertion->execute(array(
-                'name' => $name,
-                'pass' => $pass,
-                'email' => $email
+                'nomUtilisateur' => $name,
+                'mdpUtilisateur' => $pass,
+                'mailUtilisateur' => $email
             ));
             echo "Success"; //On 'retourne' la valeur Succes au javascript si la connexion est bonne
         }
