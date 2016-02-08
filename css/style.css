@@ -91,11 +91,12 @@ input[type=submit], .switchBtn {
 .switchBtn {
     background-color: transparent;
     color: white;
-    border:1px dotted    white;
+    
     margin-top: 10px;
 }
 #registerZone, #connexionZone {
 	padding: 10px 20px;
+    margin: 0 auto;
 }
 #registerZone {
 	display: none;  
@@ -139,11 +140,8 @@ footer {
     width: 100%;
     color: #FFF;
     text-align: center;
-    margin-top: 280px;
+    margin-top: 200px;
     position: static;
-}
-#description {
-    
 }
                                         /** -Modif_jo**/
 #logoDiv{
@@ -159,13 +157,13 @@ footer {
 #connexionZone{
     text-align: center;
     //background-color: green;
-    margin: 0 auto;
+    //margin: 0 auto;
     width: 1000px;
 }
 #registerZone{
     text-align: center;
     //background-color: green;
-    margin: 0 auto;
+    //margin: 0 auto;
     width: 1000px;
 }
 figure{
@@ -193,6 +191,10 @@ figure{
     box-sizing: border-box; 
 }
 button{
+     display: inline-block;
+     position: relative;
+     clear: both;
+     margin: 0 auto;
     background-color: #b32d00;
      border-radius: 50px;
 }
@@ -204,6 +206,7 @@ button:hover{
 }
                                         /**header_PAUL**/
 input{
+    color: black;
     margin-left: 60px;
     margin-top: 10px;
     border-radius: 50px;
@@ -233,9 +236,10 @@ header{
 }
 /**/
 #slogan{
-    position: fixed;
-    height: 100px;
-    width: 100%;
+    z-index: 1000;
+      position: fixed;
+      height: 100px;
+      width: 100%;
     top: 0px;
     background:#4d1300;
     background: -webkit-linear-gradient(top,#4d1300,#b32d00);
@@ -245,4 +249,8 @@ header{
 }
 #slogan>h2{
     text-align: center;
+}
+form{
+
+     margin-top: 100px;
 }
