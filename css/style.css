@@ -126,7 +126,7 @@ input[type=submit], .switchBtn {
     display: block;
 }
 p {
-    color : black;
+    color : white;
 }
 footer {
     background-color:   transparent;
@@ -143,6 +143,8 @@ footer {
     height: 50%;
     border: 1px dotted white;
     margin-left: 25px;
+    margin-top: 25px;
+    text-align: center;
     
     box-sizing: border-box; 
 }
