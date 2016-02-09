@@ -1,7 +1,7 @@
 <?php
     // connexion dans la base de données
     try{
-        $bdd = new PDO('mysql:host=192.168.201.77;dbname=yelp', 'webforce3');
+        $bdd = new PDO('mysql:host=192.168.201.77;dbname=yelp', '123');
     }
     catch (Exception $e){
         die('Erreur : ' . $e->getMessage());
