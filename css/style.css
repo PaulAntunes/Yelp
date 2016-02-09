@@ -50,7 +50,7 @@ footer {
 }
 #logoDiv{
 	z-index: 10000;
-	position: absolute;
+	position: fixed;
 	top: 20px;
 	left: 25px;
     border-radius: 70% 0;
@@ -188,3 +188,48 @@ h2{
 	font-weight: 400;
 
 }
+@media only screen and (max-width: 600px) {
+	*{
+		font-size: 0.9em;
+	}
+	h3{
+		font-size: 1.5em;
+	}
+	label{
+		font-size: 2em;
+	}
+	body{
+		min-width: 600px;
+		background-image: url('http://wallpapers55.com/wp-content/uploads/2013/11/hd-wallpaper-beach-miami-1120x600.jpg');
+		background-repeat: no-repeat;
+		background-size : cover;
+		margin-top: 0;
+		margin-right: 0;
+		margin-left: 0;
+		margin-bottom: 0;
+	}
+	.switchBtn{
+		font-size: 2em;
+	}
+	.bouton{ 
+		font-size: 2em;
+	}
+	#presentation{
+    
+    height: 30%;
+    font-size: 1.5em;
+    margin: 10em auto ;
+    padding: 5em 5em;
+    
+    footer{
+    height: 200px;
+    background:#4d1300;
+    background: -webkit-linear-gradient(top,#b32d00,#4d1300);
+    padding: 10px 20px;
+    text-align: center;
+    margin-top:50em;
+    position: fixed;
+    }
+    
+}
+
