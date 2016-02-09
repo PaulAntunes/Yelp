@@ -84,7 +84,7 @@ figure{
 }
 
 #presentation{
-    
+    font-family: 'Montserrat';
     height: 300px;
     background-color: rgba(77, 19, 0,0.6);
     font-size: 1.5em;
@@ -208,7 +208,7 @@ h2{
 		margin-left: 0;
 		margin-bottom: 0;
 	}
-	td>input{
+	td > input{
 	width: 100%;
 	font-size: 2em;
 	}
