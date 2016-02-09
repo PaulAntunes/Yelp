@@ -29,8 +29,7 @@ if (!empty($_POST)) {
 	// si l'id dans le formulaire est > 0 => film existant => modification
 	if ($idbuisness > 0) {
 		// J'écris ma requête dans une variable
-		$updateSQL = '
-			UPDATE buisness
+		$updateSQL = '	UPDATE buisness
 			SET nomBuisness = :nomBuisness,
 			typeBuisness = :typeBuisness,
 			gpsLongBuisness = :gpsLongBuisness,
@@ -66,11 +65,10 @@ if (!empty($_POST)) {
 		}
 	}
 	// Sinon Ajout
-	else {
+	/*else {
 		// J'écris ma requête dans une variable
-		$insertInto = '
-			INSERT INTO buisness (nomBuisness, typeBuisness, gpsLongBuisness, gpsLatBuisness, codepostBuisness, infosBuisness, villeBuisness,photoBuisness,adresseBuisness)
-			VALUES (:nomBuisness, :typeBuisness, :gpsLongBuisness, :gpsLatBuisness, :codepostBuisness, :infosBuisness, :villeBuisness, :photoBuisness, :adresseBuisness)
+		$insertInto = '	INSERT INTO buisness (nomBuisness, typeBuisness, gpsLongBuisness, gpsLatBuisness, codepostBuisness, infosBuisness, villeBuisness,photoBuisness,adresseBuisness)
+						VALUES (:nomBuisness, :typeBuisness, :gpsLongBuisness, :gpsLatBuisness, :codepostBuisness, :infosBuisness, :villeBuisness, :photoBuisness, :adresseBuisness)
 		';
 		// Je prépare ma requête
 		$pdoStatement = $pdo->prepare($insertInto);
@@ -93,7 +91,7 @@ if (!empty($_POST)) {
 			header('Location: accueil.php?id='.$newId);
 			exit;
 		}
-	}
+	}*/
 }
 
 // J'initialise mes variables pour l'affichage du formulaire/de la page
@@ -148,19 +146,19 @@ if (isset($_GET['yelp'])) {
 	// Je traite la chaine de caractères
 	$yelp = strip_tags(trim($_GET['yelp']));
 
-	// On inclut nos packages composer, avec l'API yelp
-	require_once 'vendor/autoload.php';
+	/*// On inclut nos packages composer, avec l'API yelp
+	require_once 'vendor/autoload.php';*/
 
 	// NE PAS retenir try - catch pour l'instant
-	try {
+	/*try {
 		// J'effectue d'abord une recherche sur les termes passés en paramètre d'URL
-		$yelpResultsList = \Jleagle\yelp\yelp::search($yelp);
-		//print_pre($yelpResultsList);exit;
-	}
-	catch (Exception $e) {
+!!!!!!!!!WHAT DO I DO HERE??									$yelpResultsList = \Jleagle\yelp\yelp::search($yelp); 			/***!!!!**/
+		//print_pre($yelpResultsList);exit;*/
+	/*}*/
+	/*catch (Exception $e) {
 		// Si une erreur survient, alors on n'a aucun résultat
 		$noYelpResult = true;
-	}
+	}*/
 
 	// Si un titre exact de film a été renseigné ou si on n'a qu'un seul résultat lors de la recherche
 	if (isset($_GET['yelpExact']) || sizeof($yelpResultsList) == 1) {
@@ -168,7 +166,7 @@ if (isset($_GET['yelp'])) {
 		$yelpResultsList = array();
 		try {
 			// On récupère les infos sur un seul film
-			$buisness = \Jleagle\yelp\yelp::retrieve($yelp);
+			/**!!???????**/$buisness = \Jleagle\yelp\yelp::retrieve($yelp);
 			
 			// On donne les bonnes valeurs aux variables destinées à l'affichage
 			// => pré-remplir le formulaire
@@ -213,7 +211,7 @@ include '../html/header.html';
 			// Sinon si on a fait une recherche et qu'on a plusieurs résultats, on les affiche
 			else if (sizeof($yelpResultsList) > 0) {
 				echo '<br />Résultats :';
-				foreach ($yelpResultsList as $curMovie) {
+				foreach ($yelpResultsList as $curYelp) {
 					echo ' &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="?yelp='.urlencode($curMovie->title).'&yelpExact=1">'.$curMovie->title.'</a>';
 				}
 			}
@@ -233,12 +231,8 @@ include '../html/header.html';
 			</tr>
 			<tr>
 				<td>Type :&nbsp;</td>
-				<td><select name="typeBuisness">
-					<option value="">choisissez</option>
-					<?php foreach ($categoriesList as $curCategorie) : ?>
-					<option value="<?php echo $curCategorie['cat_id']; ?>"<?php echo $typeBuisness == $curCategorie['typeBuisness'] ? ' selected="selected"' : ''; ?>><?php echo $curCategorie['nomBuisness']; ?></option>
-					<?php endforeach; ?>
-				</select><?php if (!empty($yelpCategory)) echo '&nbsp;&nbsp;yelp => '.$yelpCategory; ?></td>
+				<td><input type="text" name="typeBuisness">
+					
 			</tr>
 			<tr>
 				<td>Adresse :&nbsp;</td>
@@ -279,5 +273,6 @@ include '../html/header.html';
 		</fieldset>
 	</form>	
 <?php
-include '../html/footer.html'
+include '../html/footer.html';
+
 ?>
