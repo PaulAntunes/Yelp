@@ -2,7 +2,7 @@
     // connexion dans la base de données
   $bdd = new PDO('mysql:host=192.168.201.77;dbname=yelp', '');
  
-    $request = $bdd->query("SELECT mailUtilisateur FROM utilisateur WHERE mailUtilisateur = '$_POST[emailRegister]'");
+    $request = $bdd->query("SELECT mailUtilisateur FROM utilisateur WHERE mailUtilisateur = $_POST[emailRegister]");
     $membre = $request->fetch();
 
 
