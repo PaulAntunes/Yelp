@@ -1,0 +1,87 @@
+* {
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-box-sizing:border-box;
+    font-family: 'font-family: 'Playfair Display', serif;';
+    transition : 0.5s all;
+    -webkit-transition : 0.5s all;
+    font-size: 14px;
+    color: white;
+    font-family: 'Helvetica','Playfair Display', serif;';
+}
+html{
+    height: 780px;
+    width: 1920px;
+}
+body{
+    background-image: url('../img/pink.jpg');
+    background-repeat: no-repeat;
+    //background-repeat: repeat-x;
+    background-size : cover;
+    width: 100%;
+    margin: 0 0;
+}
+
+h1{
+    text-align: center;
+    text-transform: uppercase;
+    font-family: 'font-family: 'Playfair Display', serif;';
+    font-size: 32px;
+    position: static;
+    margin-top: 0px;
+    font-family: 'Merriweather Sans', sans-serif;
+}
+h2 {
+    text-align: center;
+    position: relative;
+    top: -25px;
+    font-size: 13px;
+    font-style: italic;
+    font-family:  'Bad Script', cursive;
+}
+form {
+    margin: 0;
+    padding: 0;
+    border-spacing: 0;   
+    margin-right: 0px;
+    margin-left: 1400px;
+    margin-top: 60px;
+    margin-bottom: 5px;    
+
+}
+.recherche {
+    position: relative;
+    right : 200px;
+}
+.deco {
+    margin: 0;
+    padding: 0;
+    border-spacing: 0;   
+    margin-right: 0px;
+    margin-left: 1727px;
+    margin-top: 1px;
+}
+.para {
+    margin: 0;
+    padding: 0;
+    border-spacing: 0;   
+    margin-right: 0px;
+    margin-left: 1727px;
+    margin-top: -50px;   
+    position: relative;
+    right: -5px;
+}
+footer {
+    width: 100%;   
+    text-align: center;
+    //margin-top: 280px;
+    position: static;
+    background-color: transparent;
+}
+#map {
+    margin-left: 750px;
+    
+}
+    
+
+
