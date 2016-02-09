@@ -188,7 +188,7 @@ h2{
 	font-weight: 400;
 
 }
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 850px) {
 	*{
 		font-size: 0.9em;
 	}
@@ -208,6 +208,10 @@ h2{
 		margin-left: 0;
 		margin-bottom: 0;
 	}
+	td>input{
+	width: 100%;
+	font-size: 2em;
+	}
 	.switchBtn{
 		font-size: 2em;
 	}
@@ -220,15 +224,15 @@ h2{
     font-size: 1.5em;
     margin: 10em auto ;
     padding: 5em 5em;
-    
+    }
     footer{
     height: 200px;
     background:#4d1300;
     background: -webkit-linear-gradient(top,#b32d00,#4d1300);
     padding: 10px 20px;
     text-align: center;
-    margin-top:50em;
-    position: fixed;
+    //margin-top:50em;
+    //position: fixed;
     }
     
 }
