@@ -64,8 +64,12 @@ if (!empty($_POST)) {
 			exit;
 		}
 	}
+	/*$insertInto = '	INSERT INTO buisness (nomBuisness, typeBuisness, gpsLongBuisness, gpsLatBuisness, codepostBuisness, infosBuisness, villeBuisness,photoBuisness,adresseBuisness)
+						VALUES (:nomBuisness, :typeBuisness, :gpsLongBuisness, :gpsLatBuisness, :codepostBuisness, :infosBuisness, :villeBuisness, :photoBuisness, :adresseBuisness)
+		';*/
+		
 	// Sinon Ajout
-	/*else {
+	else {
 		// J'écris ma requête dans une variable
 		$insertInto = '	INSERT INTO buisness (nomBuisness, typeBuisness, gpsLongBuisness, gpsLatBuisness, codepostBuisness, infosBuisness, villeBuisness,photoBuisness,adresseBuisness)
 						VALUES (:nomBuisness, :typeBuisness, :gpsLongBuisness, :gpsLatBuisness, :codepostBuisness, :infosBuisness, :villeBuisness, :photoBuisness, :adresseBuisness)
@@ -91,7 +95,7 @@ if (!empty($_POST)) {
 			header('Location: accueil.php?id='.$newId);
 			exit;
 		}
-	}*/
+	}
 }
 
 // J'initialise mes variables pour l'affichage du formulaire/de la page
