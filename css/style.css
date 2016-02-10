@@ -6,7 +6,7 @@
 	font-size: 14px;
   	transition : 0.5s all;
     -webkit-transition : 0.5s all;
-    border: 1px solid black;//afficher les enveloppes
+    //border: 1px solid black;//afficher les enveloppes
     margin: 0 0;
     color:white;
 }
@@ -142,7 +142,7 @@ input.deco{
 img{
     float: left;
 }
-a{
+#barreNav>a{
     color:darkblue;
     padding-left: 50px;
     padding-top: 120px;
@@ -194,8 +194,11 @@ li{
 }
 /*Page Profil*/
 .secProfile{
-	background-color: #E54D00;
-	margin: 100px 50px;
+	clear: both;
+	max-width: 840px;
+	height: 20em;
+	background-color: rgba(229,77,0,0.6);
+	margin: 100px auto;
 	text-align: center;
 }
 .secProfile>div{
@@ -203,7 +206,7 @@ li{
 }
 .secProfile>figure{
 	float: left;
-	background-color: green;
+	//background-color: green;
 	height: 150px;
 	width: 200px;
 }
@@ -211,6 +214,7 @@ li{
 display: block;
 text-align: left;
 width: 150px;
+margin: 5px 0;
 margin-left: 220px;
 }
 .secProfile>div>h2{
@@ -222,21 +226,81 @@ margin-left: 220px;
 .secProfile>aside>ul>li{
 	display: block;
 }
-/*#infoProfile{
-	width: 450px;
+.secProfile>figure>img{
+	max-width: 80%;
+}
+#infoProfile{
+	float: left;
+	//background-color: #E59400;
 	margin:0 0;
 }
+#infoProfile>ul{
+	left: 0;
+	
+}
+#infoProfile>ul>li{
+	margin-left: 0;
+}
 #interactProfile{
-	//position: absolute;
-	//float: right;
-	left: 470px;
-	top: 125px;
-	width: 250px;
+	margin-right: 0px;
+	text-align: left;
 }
 #interactProfile>li{
 	margin: 5px auto;
 	display: block;
+	}
+#troublemaker{
+		height: 10px;
+		width: 50px;
+	}
+#visuProfile{
+	position: relative;
+top: 150px;
+left: 125px;
+}
+.secProfile>aside{
+	margin: 0 25px;
+}
+article>div>h2{
+	text-align: left;
+}
+.secProfile>article>div{
+	margin-left: 0;
+}
+article>div>figure{
+	//display: inline-block;
+	margin-left: 0;
+	//position: relative;
+	width:200px;
+	height: 142px;
+}
+article>div>figure>img{
+	max-width: 100%;
+}
+iframe{
+	position: absolute;
+	top: 525px;
+	left: 600px;
+}
+.secProfile>article{
+	height: 280px;
+	margin-left: 200px;
+}
+.secProfile>div>div{
+	display: inline-block;
+}
+.titleDesc{
+	width: 100px;
+	display: inline-block;
+	margin: 10px 15px 0;
+}
+/*li>a{
+    color:white;
+    text-decoration: none;
 }*/
+
+
+/*RESPONSIVE*/
 @media only screen and (max-width: 850px) {
 	*{
 		font-size: 0.9em;
@@ -286,4 +350,3 @@ margin-left: 220px;
     }
     
 }
-

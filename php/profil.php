@@ -4,7 +4,8 @@ require'../html/header.html';
 
 <section class="secProfile">
 	<figure>
-		PhotoProfil
+	<img src="https://d1h69ey09xg1xv.cloudfront.net/wp-content/authors/57773.jpg?v=1449170914">
+		
 	</figure>
 	<div id="infoProfile">
 		<h2>Votre Nom</h2>
@@ -18,7 +19,7 @@ require'../html/header.html';
 	</div>
 	<ul id="interactProfile">
 		<li>
-			<div>
+			<div id="troublemaker">
 				Téléchargez votre photo!
 				<input type="file" placeholder="Votre photo">
 			</div>
@@ -26,7 +27,7 @@ require'../html/header.html';
 		<li><a href="">Mes amis</a></li>
 		<li><a href="">Mettre à jour profil</a></li>
 	</ul>
-	<ul id="infoProfile">
+	<ul id="visuProfile">
 		<a href="amis">amis</a>
 		<a href="nb d'avis">nb d'avis</a>
 		<a href="photos">photos</a>
@@ -48,13 +49,13 @@ require'../html/header.html';
 		<div>
 			<h2>nom business</h2>
 			<figure>
-				
+				<img src="http://static.fjcdn.com/pictures/Doge+house_3ba3d2_4807009.jpg">
 			</figure>
-			<div>
+			<div class="titleDesc">
 				infos business
 			</div>
-			<iframe src=""></iframe>
-			<div>avis business</div>
+			<iframe src="">goggle mahp</iframe>
+			<div class="titleDesc">avis business</div>
 		</div>
 	</article>
 </section>
