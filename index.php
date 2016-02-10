@@ -1,5 +1,10 @@
+<?php include 'html/header.html'; ?>
+
 <?php 
+
 	require 'inc/config.php';
 	include 'html/index.html';
-	require 'css/style.css';
+?>
+<?php 
+		include 'html/footer.html';
 ?>

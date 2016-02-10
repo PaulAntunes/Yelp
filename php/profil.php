@@ -1,11 +1,12 @@
 <?php 
 require'../html/header.html';
 ?>
-<section>
+
+<section class="secProfile">
 	<figure>
 		PhotoProfil
 	</figure>
-	<div>
+	<div id="infoProfile">
 		<h2>Votre Nom</h2>
 		<ul>
 			<li>Adresse :</li>
@@ -15,21 +16,23 @@ require'../html/header.html';
 			<li>tournevis préféré :</li>
 		</ul>
 	</div>
-	<ul>
-		<div>
-		Téléchargez votre photo!
-		<input type="file" placeholder="Votre photo">
-		</div>
-		<a href="">Mes amis</a>
-		<a href="">Mettre à jour profil</a>
+	<ul id="interactProfile">
+		<li>
+			<div>
+				Téléchargez votre photo!
+				<input type="file" placeholder="Votre photo">
+			</div>
+		</li>
+		<li><a href="">Mes amis</a></li>
+		<li><a href="">Mettre à jour profil</a></li>
 	</ul>
-	<ul>
+	<ul id="infoProfile">
 		<a href="amis">amis</a>
 		<a href="nb d'avis">nb d'avis</a>
 		<a href="photos">photos</a>
 	</ul>
 </section>
-<section> 
+<section class="secProfile"> 
 	<aside>
 		<h3>vos avis récents</h3>
 		<ul>

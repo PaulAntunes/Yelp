@@ -1,5 +1,5 @@
 *{
-	 -moz-box-sizing: border-box;
+	-moz-box-sizing: border-box;
     box-sizing: border-box;
     -webkit-box-sizing:border-box;
 	font-family: 'Helvetica';
@@ -10,11 +10,11 @@
     margin: 0 0;
     color:white;
 }
-html{
+/*html{
 	height: 1080px;
-	width: 1920;
+	width: 1920px;
 
-}
+}*/
 body{
 	background-color: #b32d00;
 	background-image: url('../img/Miami.jpg');
@@ -166,7 +166,7 @@ a{
     text-align: center;
 }
 form{
-    margin-top: 100px;
+    margin-top: 150px;
     margin-bottom: 10px;
 }
 .closePopIn{
@@ -192,6 +192,51 @@ h2{
 li{
 	display: inline-block;
 }
+/*Page Profil*/
+.secProfile{
+	background-color: #E54D00;
+	margin: 100px 50px;
+	text-align: center;
+}
+.secProfile>div{
+	display: inline-block;
+}
+.secProfile>figure{
+	float: left;
+	background-color: green;
+	height: 150px;
+	width: 200px;
+}
+.secProfile>div>ul>li{
+display: block;
+text-align: left;
+width: 150px;
+margin-left: 220px;
+}
+.secProfile>div>h2{
+	text-align: left;
+}
+.secProfile>aside{
+	float: left;
+}
+.secProfile>aside>ul>li{
+	display: block;
+}
+/*#infoProfile{
+	width: 450px;
+	margin:0 0;
+}
+#interactProfile{
+	//position: absolute;
+	//float: right;
+	left: 470px;
+	top: 125px;
+	width: 250px;
+}
+#interactProfile>li{
+	margin: 5px auto;
+	display: block;
+}*/
 @media only screen and (max-width: 850px) {
 	*{
 		font-size: 0.9em;
