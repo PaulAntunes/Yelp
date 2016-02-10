@@ -52,15 +52,17 @@ require'../html/header.html';
 	<article>
 		<div>
 			<h2>nom business</h2>
-			<figure>
+			<figure id='figTwo'>
 				<img src="http://static.fjcdn.com/pictures/Doge+house_3ba3d2_4807009.jpg">
 			</figure>
-			<div class="titleDesc">
+			
+			<iframe src="">goggle mahp</iframe>
+		</div>
+		<div class="titleDesc">
 				infos business
 			</div>
-			<iframe src="">goggle mahp</iframe>
 			<div class="titleDesc">avis business</div>
-		</div>
+
 	</article>
 </section>
 

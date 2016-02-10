@@ -279,9 +279,8 @@ article>div>figure>img{
 	max-width: 100%;
 }
 iframe{
-	position: absolute;
-	top: 525px;
-	left: 600px;
+	height: 150px;
+	width: 250px;
 }
 .secProfile>article{
 	height: 280px;
@@ -294,6 +293,10 @@ iframe{
 	width: 100px;
 	display: inline-block;
 	margin: 10px 15px 0;
+}
+#figTwo{
+	float: left;
+	margin: 0 0;
 }
 /*li>a{
     color:white;
