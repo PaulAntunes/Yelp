@@ -22,11 +22,11 @@ $(document).ready(function() {	//atend que le doc soit chargé
 			console.log(pseudoInput + " " + passInput);   
 
 			//appel $.POST( URL(string) , paramètres(string ou objet), callback(function) )
-			$.post('php/connexion.php', $('#connexionZone form').serialize()) // serialize : (fruit:banane legume:patate) -> '&fruit=banane&legume=patate'
-			.done(function(retour){// quand tout s'est bien passé  + récupération des echo du php
-				//alert("retour serveur : " + retour); // affiche ce que m'a retourné le fichier php
-				if(retour == 'OK'){ // traitement sur le retour car dans le fichier php il n'y a que echo 'ok' ou echo 'ko'
-			  		$('#connexionZone article p').html('Vous êtes connecté.'); //  je change l'html de la div #seconde
+			$.post('php/connexion.php', $('#connexionZone form').serialize()) 
+			.done(function(retour){
+
+				if(retour == 'OK'){ 
+			  		$('#connexionZone article p').html('Vous êtes connecté.'); 
 			  		$('#connexionZone article').show();
 			  	}else if(retour == 'KO'){
 			  		$('#connexionZone article p').html('Vous devez vous inscrire.');
@@ -69,4 +69,4 @@ $(document).ready(function() {	//atend que le doc soit chargé
 	      });
 	    }
 	  });
-})//JQUERY
+})

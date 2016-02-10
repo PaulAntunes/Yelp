@@ -14,7 +14,7 @@ html{
     width: 1920px;
 }
 body{
-    background-image: url('../img/pink.jpg');
+    background-image: url('../img/sunset.jpg');
     background-repeat: no-repeat;
     //background-repeat: repeat-x;
     background-size : cover;
@@ -24,8 +24,7 @@ body{
 
 h1{
     text-align: center;
-    text-transform: uppercase;
-    font-family: 'font-family: 'Playfair Display', serif;';
+    text-transform: uppercase; 
     font-size: 32px;
     position: static;
     margin-top: 0px;
@@ -39,6 +38,22 @@ h2 {
     font-style: italic;
     font-family:  'Bad Script', cursive;
 }
+h3 {
+    position: relative;
+    left: 20px;
+    top : 20px;
+    font-family: 'Merriweather Sans', sans-serif;
+    font-size: 18px;
+
+
+}
+h5 {
+    position: relative;
+    left: 20px;
+    font-family: 'Merriweather Sans', sans-serif;
+    font-size: 18px;
+
+}
 form {
     margin: 0;
     padding: 0;
@@ -49,27 +64,27 @@ form {
     margin-bottom: 5px;    
 
 }
+#ban {
+   position: relative;
+   left: 800px;
+   top: -100px;
+   word-spacing: 30px;
+
+
+}
+a {
+    font-family: 'Merriweather Sans', sans-serif;
+
+}
 .recherche {
     position: relative;
     right : 200px;
 }
-.deco {
-    margin: 0;
-    padding: 0;
-    border-spacing: 0;   
-    margin-right: 0px;
-    margin-left: 1727px;
-    margin-top: 1px;
-}
-.para {
-    margin: 0;
-    padding: 0;
-    border-spacing: 0;   
-    margin-right: 0px;
-    margin-left: 1727px;
-    margin-top: -50px;   
+#decopara {
+    float: right;
     position: relative;
-    right: -5px;
+    right: 94px;
+    top: 25px;
 }
 footer {
     width: 100%;   
@@ -80,8 +95,14 @@ footer {
 }
 #map {
     margin-left: 750px;
+    margin-bottom: 50px;
     
 }
-    
+ul>li{
+    font-family: 'Merriweather Sans', sans-serif;
+    position: static;
+    font-size: 14px;
+
+}
 
 
