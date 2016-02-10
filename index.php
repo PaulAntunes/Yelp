@@ -2,7 +2,7 @@
 
 <?php 
 
-	require 'inc/config.php';
+	require 'config.php';
 	include 'html/index.html';
 ?>
 <?php 

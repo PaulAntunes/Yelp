@@ -5,48 +5,35 @@
 		<title>Amis</title>
 		<meta charset="utf-8">
 		<link rel="stylesheet" type="text/css" href="styleAmis.css">
+		<link href='https://fonts.googleapis.com/css?family=Merriweather+Sans:800' rel='stylesheet' type='text/css'>
 		<script src="http://maps.googleapis.com/maps/api/js"></script>
-		<script>
-			function initialize() {
-  var mapProp = {
-    center:new google.maps.LatLng(51.508742,-0.120850),
-    zoom:5,
-    mapTypeId:google.maps.MapTypeId.ROADMAP
-  };
-  var map=new google.maps.Map(document.getElementById("googleMap"),mapProp);
-}
-google.maps.event.addDomListener(window, 'load', initialize);
-		</script>
 	</head>
 	<body>
-		<header>
-			<div id="a">
-				<a href="">Retour Profil</a>
-				<br/>
-				<a href="">Retour Acceuil</a>
-			</div>
-		</header>
 		<div id="blurBox">
 			<div id="boxContent">
+				<div id="a">
+					<a href="">Retour Profil</a>
+					<a href="">Retour Acceuil</a>
+				</div>
 				<div id="profil">
 					<img id="chris" src="http://newshour.s3.amazonaws.com/photos/2011/01/05/portrait-walken_slideshow.jpg" height="170" width="170">
 					<div id="infos">
 						<h1 id="nom">Votre Nom</h1>
 						<h2>Vos infos</h2>
 						<table>
-							<th>nb d'amis</th>
-							<th>nb d'avis</th>
-							<th>nb de photos</th>
+							<th><a href="">nb d'amis |</a> </th>
+							<th><a href="">nb d'avis |</a> </th>
+							<th><a href="">nb de photos </a> </th>
 						</table>
 					</div>
 				</div>
 
-				<h1>Vos Amis</h1>
+				<h1>Vos Amis: </h1>
 				<div id="contact">
 					<table>
 						<th><img src="http://blog.gaborit-d.com/wp-content/uploads/2011/08/martin-schoeller-jay-z-portrait-580x754.jpeg" height="100" width="100"></th>
 						<th>
-							<p>nom <p/>
+							<a href=""><p>nom <p/><a/>
 							
 							<p>lieu de domicile <p/>
 						
@@ -58,7 +45,7 @@ google.maps.event.addDomListener(window, 'load', initialize);
 					<table>
 						<th><img src="http://portra.wpshower.com/wp-content/uploads/2014/03/martin-schoeller-barack-obama-portrait-up-close-and-personal.jpg" height="100" width="100"></th>
 						<th>
-							<p>nom <p/>
+							<a href=""><p>nom <p/><a/>
 							
 							<p>lieu de domicile <p/>
 						
@@ -70,7 +57,7 @@ google.maps.event.addDomListener(window, 'load', initialize);
 					<table>
 						<th><img src="http://public.media.smithsonianmag.com/legacy_blog/npg_portraits_nicholson_jack_2002.jpg" height="100" width="100"></th>
 						<th>
-							<p>nom <p/>
+							<a href=""><p>nom <p/><a/>
 							
 							<p>lieu de domicile <p/>
 						
@@ -82,7 +69,7 @@ google.maps.event.addDomListener(window, 'load', initialize);
 					<table>
 						<th><img src="http://npg.si.edu/exhibit/feature/images/schoeller_full.jpg" height="100" width="100"></th>
 						<th>
-							<p>nom <p/>
+							<a href=""><p>nom <p/><a/>
 							
 							<p>lieu de domicile <p/>
 						

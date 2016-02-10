@@ -1,41 +1,29 @@
-body:before{
-	position: absolute;
-	-webkit-filter: blur(5px);
-}
 body{
-	background-image: url("http://photofiles.alphacoders.com/234/23422.jpg");
+	background-image: url("../img/23422.jpg");
 	background-size: cover;
 	background-repeat: no-repeat;
 	background: -webkit-filter(5px);
-	font-family: Georgia;
+	font-family: 'Merriweather Sans', sans-serif;
 	display: inline-block; 
 
+	
 }
 
 #blurBox{
   margin-left: 100%  ;
   width: 50em;
   border: 3px solid #663333;
-  opacity: 1;
-  filter: alpha(opacity=60); /* For IE8 and earlier */
   width:200% ;
   float: left;
   border-radius: 10px;
-
-  
-
+  z-index: 1;
  }
 #boxContent{
 	 margin: 5%;
-}
-a{
-	margin-top: 150px;
-	color: brown;
-	position: static;
-}
-#a{
-	float: right;
-	margin-top: 40px;
+	 overflow: auto;
+	 z-index: 2;
+
+
 }
 #chris{
 	float: left;
@@ -46,9 +34,17 @@ a{
 #profil{
 	margin-bottom: 150px;
 	display: inline-block;
+	border-style: solid;
+	border-width: 1px;
+	border-color: #805e00;
+	border-radius:10px;
+	: 110%;
 }
 img{
 	border-radius: 30px;
+	border-width: 3px;
+	border-style: solid;
+	border-color: #4d3900;
 	-webkit-filter: drop-shadow(8px 8px 10px Grey); /* Chrome, Safari, Opera */
     filter: drop-shadow(8px 8px 10px Grey);
 }
@@ -59,11 +55,29 @@ width: 35%;
 margin-bottom: 10px;
 border-radius: 30px;
 padding-left: 20px;
-border-color: #ffd699
+border-color: #ffd699;
+-webkit-transition-property: width, height; /* Safari */
+-webkit-transition-duration: 4s; /* Safari */
+transition-property: width, height;
+transition-duration: 2s;
 }
 th >:first-child{
 	color: #FF0033;
 }
 h1{
-	color: #ffd699;
+	color: #cc00cc;
+	text-decoration: underline;
+}
+#a{
+margin-bottom: 20px;
+}
+#contact:hover{
+	width: 90%;
+    height: 350px;
+    background-image: url("https://media.giphy.com/media/3o6UB4DnrEteYLTBrG/giphy.gif");
+    background-size: cover;
+
+}
+a:hover{
+	color: white;
 }
