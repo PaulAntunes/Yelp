@@ -1,7 +1,11 @@
 <?php 
 require'../html/header.html';
 ?>
-
+<div id='logoDiv'>Yelp</div>
+<div id='slogan'>
+			<h1>Yelp</h1>
+			<h2>the best way to find great local businesses</h2>
+		</div>
 <section class="secProfile">
 	<figure>
 	<img src="https://d1h69ey09xg1xv.cloudfront.net/wp-content/authors/57773.jpg?v=1449170914">
