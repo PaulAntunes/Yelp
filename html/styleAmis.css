@@ -1,0 +1,49 @@
+body{
+	background-image: url("http://photofiles.alphacoders.com/234/23422.jpg");
+	background-image:  filter: blur(2px);
+	background-size: cover;
+	background-repeat: no-repeat;
+	font-family: Georgia;
+	display: inline-block;
+}
+#blurBox{
+  margin: 30px;
+  background-color: #ffffff;
+  border: 1px solid black;
+  opacity: 0.6;
+  filter: alpha(opacity=60); /* For IE8 and earlier */
+  padding: 30%
+}
+#boxContent{
+	 margin: 5%;
+	 opacity: 11;
+}
+a{
+	margin-top: 150px;
+	color: brown;
+	position: static;
+
+
+}
+#a{
+	float: right;
+	margin-right: 50px;
+	margin-top: 40px;
+}
+#chris{
+	float: left;
+}
+#infos{
+	margin-left: 200px;
+}
+#profil{
+	margin-bottom: 150px;
+}
+img{
+	border-radius: 30px;
+	-webkit-filter: drop-shadow(8px 8px 10px Grey); /* Chrome, Safari, Opera */
+    filter: drop-shadow(8px 8px 10px Grey);
+}
+#contact{
+
+}

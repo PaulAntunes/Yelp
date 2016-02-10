@@ -10,12 +10,13 @@ try{
     print_r($e);
   }
   
- 
-    $request = $bdd->query("SELECT mailUtilisateur FROM utilisateur WHERE mailUtilisateur = $_GET[emailRegister]");
-    $membre = $request->fetch();
+ $sql = "SELECT mailUtilisateur FROM utilisateur WHERE mailUtilisateur = \"".$_GET['emailRegister']."\"";
+ //echo $sql;exit;
+    $request = $bdd->query($sql);
+    $membre = $request-> execute(array('emailRegister' => "$_GET ['mailUtilisateur']"));
 
 
-    if(!empty($_GET['firstName']) &&   !empty($_GET['lastName']) && !empty($_GET['pass']) && !empty($_GET['email'])){ // si les variables ne sont pas vides
+    if(!empty($_GET['firstNameRegister']) &&   !empty($_GET['lastNameRegister']) && !empty($_GET['passRegister']) && !empty($_GET['emailRegister'])){ // si les variables ne sont pas vides
     
         if(($_GET['emailRegister']==$membre['mailUtilisateur'])){
             echo "Exist"; //On 'retourne' la valeur Error au javascript si la connexion n'est pas bonne
@@ -30,10 +31,10 @@ try{
 
             // puis on entre les données en base de données :
             $insertion = $bdd->exec('INSERT INTO utilisateur VALUES( mailUtilisateur, prénomUtilisateur, nomUtilisateur, mdpUtilisateur)');
-            $insertion->bindvalue('mailUtilisateur',$emailRegister, PDO::PARAM_INT);
-            $insertion->bindvalue('prénomUtilisateur',$firstNameRegister, PDO::PARAM_INT);    
-            $insertion->bindvalue('nomUtilisateur',$lastNameRegister, PDO::PARAM_INT);   
-            $insertion->bindvalue('mdpUtilisateur',$passRegister, PDO::PARAM_INT);  
+            $insertion->bindvalue($_GET['mailUtilisateur'],$emailRegister, PDO::PARAM_INT);
+            $insertion->bindvalue($_GET['prénomUtilisateur'],$firstNameRegister, PDO::PARAM_INT);    
+            $insertion->bindvalue($_GET['nomUtilisateur'],$lastNameRegister, PDO::PARAM_INT);   
+            $insertion->bindvalue($_GET['mdpUtilisateur'],$passRegister, PDO::PARAM_INT);  
             $insertion->execute();
             echo "Success"; //On 'retourne' la valeur Succes au javascript si la connexion est bonne
         }

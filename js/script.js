@@ -48,7 +48,7 @@ $(document).ready(function() {	//atend que le doc soit chargé
 	      $.ajax({
 	        type: 'POST',
 	        url: 'php/inscription.php',
-	        data: 'lastName=' + $('#lastNameRegister').val() + '&pass=' + $('#passRegister').val() + '&email=' + $('#emailRegister').val(),
+	        data: 'nomUtilisateur=' + $('#lastNameRegister').val() + '&mdpUtilisateur=' + $('#passRegister').val() + '&mailUtilisateur=' + $('#emailRegister').val() '&prénomUtilisateur=' + $('#firstNameRegister').val()  
 
 	        success: function(msg){
 	          if(msg == 'Success') {
